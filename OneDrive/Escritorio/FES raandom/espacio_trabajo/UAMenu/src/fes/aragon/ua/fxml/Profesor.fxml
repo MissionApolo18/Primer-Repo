@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.ua.controladores.ProfesorController">
+   <children>
+      <ImageView fitHeight="574.0" fitWidth="927.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../bin/fes/aragon/ua/recursos/interfaz/UA%20fondo%20a.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="101.0" layoutY="24.0" prefHeight="92.0" prefWidth="755.0">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="738.0" layoutX="18.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../bin/fes/aragon/ua/recursos/interfaz/UaColors.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="230.0" layoutY="12.0" text="Profesor">
+               <font>
+                  <Font name="Showcard Gothic" size="60.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.4955946968515539" centerY="0.5303030375278357" cycleMethod="REFLECT" radius="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6869904289259127">
+                           <color>
+                              <Color red="0.9800000190734863" green="0.7212799787521362" blue="0.11760000139474869" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9803921580314636" green="0.7215686440467834" blue="0.11764705926179886" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="169.0" fitWidth="158.0" layoutX="6.0" layoutY="-42.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../../../Recursos%20proyecto%20poo/midnight%20expression%20a.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="161.0" fitWidth="927.0" layoutY="405.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../bin/fes/aragon/ua/recursos/interfaz/UaColors%20b.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bntInfoProfe" layoutX="35.0" layoutY="414.0" mnemonicParsing="false" onAction="#abrirInfoProf" prefHeight="55.0" prefWidth="279.0" text="Información Personal" textFill="#fab81e">
+         <font>
+            <Font name="Showcard Gothic" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="ADDRESS_BOOK" size="32" wrappingWidth="40.11427688598633" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnInfoAlumno" layoutX="35.0" layoutY="486.0" mnemonicParsing="false" onAction="#abrirInfoAlumnos" prefHeight="55.0" prefWidth="279.0" text="Información Alumnos" textFill="#fab81e">
+         <font>
+            <Font name="Showcard Gothic" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="ADDRESS_CARD" size="32" wrappingWidth="47.77141189575195" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnMateria" layoutX="405.0" layoutY="486.0" mnemonicParsing="false" onAction="#abrirMateria" prefHeight="55.0" prefWidth="195.0" text="Materias" textFill="#fab81e">
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="BOOK" size="32" wrappingWidth="46.514272689819336" />
+         </graphic>
+      </Button>
+      <Button fx:id="btnRegresar" layoutX="710.0" layoutY="486.0" mnemonicParsing="false" onAction="#regresarVentana" prefHeight="55.0" prefWidth="195.0" text="Regresar" textFill="#fab81e">
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="REPLY" selectionFill="#fab81e" size="32" wrappingWidth="51.714287757873535" />
+         </graphic>
+      </Button>
+      <TableView fx:id="tblTablaa" layoutX="110.0" layoutY="131.0" prefHeight="262.0" prefWidth="708.0">
+        <columns>
+          <TableColumn fx:id="cmlNombre" prefWidth="96.80002021789551" text="Nombres" />
+          <TableColumn fx:id="cmlApellidoPat" prefWidth="104.7999496459961" text="Apellido Paterno" />
+            <TableColumn fx:id="cmlApellidoMat" prefWidth="109.60003662109375" text="Apellido Materno" />
+            <TableColumn fx:id="cmlRFC" prefWidth="109.60003662109375" text="RFC" />
+            <TableColumn fx:id="cmlCorreoInstit" prefWidth="132.7999267578125" text="Correo Institucional" />
+            <TableColumn fx:id="cmlMateriasInfo" prefWidth="171.20001220703125" text="Materias">
+               <columns>
+                  <TableColumn fx:id="cmlMateriaNombre" prefWidth="92.7999267578125" text="Materia" />
+                  <TableColumn fx:id="cmlSemestreMateria" prefWidth="58.4000244140625" text="Semestre" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="btnModificar" layoutX="405.0" layoutY="413.0" mnemonicParsing="false" onAction="#modificarInfoProfe" prefHeight="55.0" prefWidth="195.0" text="Modificar" textFill="#fab81e">
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="EDIT" size="32" wrappingWidth="44.0" />
+         </graphic>
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="706.0" layoutY="413.0" mnemonicParsing="false" onAction="#eliminarInfoProfe" prefHeight="55.0" prefWidth="195.0" stylesheets="@../css/application.css" text="Eliminar" textFill="#fab81e">
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="ERASER" size="32" wrappingWidth="51.08576202392578" />
+         </graphic>
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

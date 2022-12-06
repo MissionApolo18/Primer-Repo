@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.ua.controladores.ActividadECController">
+   <children>
+      <ImageView fitHeight="685.0" fitWidth="598.0" pickOnBounds="true">
+         <image>
+            <Image url="@../recursos/interfaz/UA%20fondo%20a.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="143.0" fitWidth="598.0" pickOnBounds="true">
+         <image>
+            <Image url="@../recursos/interfaz/UaColors%20c.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="27.0" text="Actividades">
+         <font>
+            <Font name="Showcard Gothic" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="88.0" text="Culturales">
+         <font>
+            <Font name="Showcard Gothic" size="45.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a75aa" height="20.0" layoutX="313.0" layoutY="43.0" stroke="#0a75aa" strokeType="INSIDE" width="285.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0a75aa" height="20.0" layoutX="-9.0" layoutY="104.0" stroke="#0a75aa" strokeType="INSIDE" width="317.0" />
+      <Label layoutX="24.0" layoutY="154.0" text="¿Realiza alguna Actividad Deportiva?">
+         <font>
+            <Font name="Showcard Gothic" size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkConfirmar" layoutX="444.0" layoutY="153.0" mnemonicParsing="false" text="Si">
+         <font>
+            <Font name="Showcard Gothic" size="18.0" />
+         </font>
+      </CheckBox>
+      <Pane layoutX="30.0" layoutY="187.0" prefHeight="410.0" prefWidth="534.0">
+         <children>
+            <ImageView fitHeight="410.0" fitWidth="534.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../recursos/interfaz/UaColors%20b.jpg" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="chkAjedrez" layoutX="22.0" layoutY="47.0" mnemonicParsing="false" text="Ajedrez">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="22.0" layoutY="14.0" text="Por favor, seleccione uno o varios dependiendo de su caso">
+               <font>
+                  <Font name="Showcard Gothic" size="16.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="chkBaileSal" layoutX="22.0" layoutY="73.0" mnemonicParsing="false" text="Baile de salón">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkCanto" layoutX="22.0" layoutY="99.0" mnemonicParsing="false" text="Canto">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkCoro" layoutX="22.0" layoutY="126.0" mnemonicParsing="false" text="Coro">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDanzaA" layoutX="22.0" layoutY="154.0" mnemonicParsing="false" text="Danza Árabe">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDanzaClas" layoutX="22.0" layoutY="184.0" mnemonicParsing="false" text="Danza clásica y contemporánea">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDanzaFolk" layoutX="22.0" layoutY="212.0" mnemonicParsing="false" text="Danza folclórica">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDanzaJazzA" layoutX="22.0" layoutY="238.0" mnemonicParsing="false" text="Danza jazz">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkDanzaJazzB" layoutX="22.0" layoutY="266.0" mnemonicParsing="false" text="Danza jazz-hip hop">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkGuitarra" layoutX="22.0" layoutY="292.0" mnemonicParsing="false" text="Guitarra">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkFotograf" layoutX="22.0" layoutY="318.0" mnemonicParsing="false" text="Introducción a la fotografía">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkMeditacion" layoutX="22.0" layoutY="344.0" mnemonicParsing="false" text="Meditación">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkOratoria" layoutX="22.0" layoutY="370.0" mnemonicParsing="false" text="Oratoria">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkPiano" layoutX="304.0" layoutY="47.0" mnemonicParsing="false" text="Piano">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkPintura" layoutX="304.0" layoutY="73.0" mnemonicParsing="false" text="Pintura">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkPorras" layoutX="304.0" layoutY="100.0" mnemonicParsing="false" text="Porras y grupos de animación">
+               <font>
+                  <Font name="Showcard Gothic" size="12.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkSalsa" layoutX="304.0" layoutY="127.0" mnemonicParsing="false" text="Salsa">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="chkTeatro" layoutX="305.0" layoutY="154.0" mnemonicParsing="false" text="Teatro">
+               <font>
+                  <Font name="Showcard Gothic" size="14.0" />
+               </font>
+            </CheckBox>
+            <ImageView fitHeight="229.0" fitWidth="145.0" layoutX="282.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/interfaz/Momo%20expression%20a.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="btnAceptar" layoutX="79.0" layoutY="615.0" mnemonicParsing="false" onAction="#guardarInfo" text="Aceptar" textFill="#fab81e">
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="CHECK" />
+         </graphic>
+         <font>
+            <Font name="Showcard Gothic" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="367.0" layoutY="615.0" mnemonicParsing="false" onAction="#regresarVentana" text="Cancelar" textFill="#fab81e">
+         <graphic>
+            <FontAwesomeIconView fill="#fab81e" glyphName="CLOSE" />
+         </graphic>
+         <font>
+            <Font name="Showcard Gothic" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
